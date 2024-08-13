@@ -29,4 +29,4 @@ const dic = ["ale","apple","monkey","plea","appla"];
 /* const arr = "abpcdplea"; 
 const dic = ["d","b","c"]; */
 
-print(longestDictionary(arr,dic));
+print(longestDictionary(arr,dic)); 
