@@ -7,7 +7,7 @@ function groupAnagrams(str){
         }
         hashmap[sortedWord].push(s);
     });
-    return JSON.stringify(hashmap);
+    return JSON.stringify(Object.values(hashmap));
 }
 const str = ["eat","tea","tan","ate","nat","bat"]; 
 print(groupAnagrams(str));
