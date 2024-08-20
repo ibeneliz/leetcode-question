@@ -20,4 +20,20 @@ function readList(head){
     }
 }
 
+//readList(head);
+
+let fourthNode = new ListNode(40);
+
+function insertAtKthPos(head,k,node){
+    console.log(head);
+    while(k--){
+        head = head.next;
+    }
+    node.next = head.next;
+    head.next = node;
+    console.log(head);
+}
+
+insertAtKthPos(head,2,fourthNode);
+
 readList(head);
