@@ -1,3 +1,4 @@
+//TC: O(N) SC: O(1)
 var reverseList = function(head) {
     let prev = null;
     let cur = head;
