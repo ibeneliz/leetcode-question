@@ -11,8 +11,6 @@ head.next = secondNode;
 let thirdNode = new ListNode(30);
 secondNode.next = thirdNode;
 
-console.log(head);
-
 function readList(head){
     while(head != null){
         console.log(head.val);
@@ -25,7 +23,6 @@ function readList(head){
 let fourthNode = new ListNode(40);
 
 function insertAtKthPos(head,k,node){
-    console.log(head);
     while(k--){
         head = head.next;
     }
@@ -36,4 +33,17 @@ function insertAtKthPos(head,k,node){
 
 insertAtKthPos(head,2,fourthNode);
 
+readList(head);
+
+function deleteAtKthPos(head,k){
+    while(--k > 0){
+        head= head.next;
+    }
+    let temp = head.next;
+    head.next = temp.next;
+    temp.next = null;
+}
+
+deleteAtKthPos(head,1);
+console.log("After deleting");
 readList(head);
