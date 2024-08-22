@@ -12,11 +12,9 @@ var mergeTwoLists = function(list1, list2) {
         }else{
             itr.next = list2;
             list2 = list2.next;
-        console.log("list2.next",list2);
         }
         itr=itr.next
     }
-    console.log(res);
     if(list1){
         itr.next =list1;
     }
